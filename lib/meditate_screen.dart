@@ -4,14 +4,17 @@ import 'package:fitness_app/constants.dart';
 import 'package:fitness_app/searchbar.dart';
 import 'package:flutter_svg/svg.dart';
 
-import 'bottom_navbar.dart';
+class MeditateView extends StatelessWidget {
+  const MeditateView({
+    Key? key,
+    required this.size,
+  }) : super(key: key);
 
-class MeditateScreen extends StatelessWidget {
+  final Size size;
+
   @override
   Widget build(BuildContext context) {
-    var size = MediaQuery.of(context).size;
     return Scaffold(
-      bottomNavigationBar: BottomNavBar(),
       body: Stack(
         children: [
           Container(
